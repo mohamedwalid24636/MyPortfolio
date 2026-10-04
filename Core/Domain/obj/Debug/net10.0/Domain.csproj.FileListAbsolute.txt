@@ -1,0 +1,17 @@
+C:\Portofolio\Portofolio\Core\Domain\bin\Debug\net10.0\Domain.deps.json
+C:\Portofolio\Portofolio\Core\Domain\bin\Debug\net10.0\Domain.dll
+C:\Portofolio\Portofolio\Core\Domain\obj\Debug\net10.0\Domain.csproj.AssemblyReference.cache
+C:\Portofolio\Portofolio\Core\Domain\obj\Debug\net10.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Portofolio\Portofolio\Core\Domain\obj\Debug\net10.0\Domain.AssemblyInfoInputs.cache
+C:\Portofolio\Portofolio\Core\Domain\obj\Debug\net10.0\Domain.AssemblyInfo.cs
+C:\Portofolio\Portofolio\Core\Domain\obj\Debug\net10.0\Domain.csproj.CoreCompileInputs.cache
+C:\Portofolio\Portofolio\Core\Domain\obj\Debug\net10.0\Domain.dll
+C:\Portofolio\Portofolio\Core\Domain\obj\Debug\net10.0\refint\Domain.dll
+C:\Portofolio\Portofolio\Core\Domain\obj\Debug\net10.0\ref\Domain.dll
+C:\Portofolio\isolated-build\Service\Domain.deps.json
+C:\Portofolio\isolated-build\Service\Domain.dll
+C:\Portofolio\isolated-build\Service\Domain.pdb
+C:\Portofolio\Portofolio\Core\Domain\bin\Debug\net10.0\Domain.pdb
+C:\Portofolio\isolated-build\Api\Domain.deps.json
+C:\Portofolio\isolated-build\Api\Domain.dll
+C:\Portofolio\Portofolio\Core\Domain\obj\Debug\net10.0\Domain.pdb

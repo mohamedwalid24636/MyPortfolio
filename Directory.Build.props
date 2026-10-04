@@ -1,0 +1,15 @@
+<Project>
+
+  <!--
+    AutoMapper 14.0.0 is the last free/MIT release and carries advisory
+    GHSA-rvv3-g6hj-g44x (DoS via uncontrolled recursion on deeply nested,
+    self-referential object graphs). The only patched releases (15.1.1 / 16.1.1)
+    require a commercial license. Our DTO<->entity maps are bounded-depth with
+    no attacker-controlled recursive graphs, so the advisory is not exploitable
+    here. It is suppressed by advisory URL so any *other* vulnerability still fails the audit.
+  -->
+  <ItemGroup>
+    <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-rvv3-g6hj-g44x" />
+  </ItemGroup>
+
+</Project>
