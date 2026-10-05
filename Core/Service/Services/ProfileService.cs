@@ -36,6 +36,16 @@ namespace Service.Services
         {
             var profile = _mapper.Map<ProfileEntity>(dto);
 
+            // A profile is the only entity with two attachments, so its create path writes the row
+            // twice: the first attachment call inserts it, and the second one — the about image — is
+            // only resolved afterwards. AboutImageUrl has therefore not been assigned when that
+            // INSERT is generated, and because the column is NOT NULL with no value the provider
+            // supplies, EF sends an explicit NULL and the insert fails. Seeding the field with the
+            // empty string, which is also how "no about image stored" is represented everywhere
+            // else, makes the first insert valid; the second call then replaces it with the real
+            // path (or leaves the empty string in place when there is no about image).
+            profile.AboutImageUrl ??= string.Empty;
+
             await _unitOfWork.CreateAttachmentAsync(
                 Repository, _attachmentService, _attachmentOptions, profile,
                 profile.ProfileImageUrl, dto.Image, AttachmentFolderKeys.ProfileImage, dto.IsDelete,
